@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0099cc"
+    android:fitsSystemWindows="true"  >
+
+    <mjgv.shooter.android.playview.ShootSurfaceView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <LinearLayout 
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+	    android:rowCount="1"
+	    android:columnCount="5" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <RelativeLayout
+	        android:layout_weight="4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:id="@+id/lyMessages"
+	        android:layout_margin="5dp">
+	        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblOverShootArea"
+                android:layout_centerInParent="true"
+                android:textColor="@color/lblTextColorNormal"
+                android:text="3"
+                android:textSize="@dimen/backCountSize"/>
+        </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="right"
+	        android:layout_weight="1"
+	        android:background="@color/black_overlay"
+	        android:alpha="1">
+	
+	        <TextView 
+	            android:id="@+id/lblScore"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/lblScoreTxt"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="15dp"
+	            android:textColor="@color/white"
+	            android:textSize="15sp"/>
+	        <TextView 
+	            android:id="@+id/txtScore"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_below="@+id/lblScore"
+	            android:text="0"
+	            android:textColor="@color/lblTextColorNormal"
+	            android:textSize="30sp"/>
+	        <TextView 
+	            android:id="@+id/lblTime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/lblTimeTxt"
+	            android:layout_below="@+id/txtScore"
+	            android:layout_centerHorizontal="true"
+	            android:textColor="@color/white"
+	            android:layout_marginTop="15dp"
+	            android:textSize="15sp"/>
+	        <TextView 
+	            android:id="@+id/txtTime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_below="@+id/lblTime"
+	            android:text="0"
+	            android:textSize="40sp"
+	            android:textColor="@color/lblTextColorNormal"/>
+			<Button
+				android:id="@+id/btnShoot"
+				android:layout_width="70dp"
+				android:layout_height="70dp"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="25dp"
+				android:background="@drawable/btn_red" />
+			<Chronometer 
+			    android:visibility="invisible"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/chrTimeElapsed"/>
+	
+		</RelativeLayout>
+	</LinearLayout>
+</FrameLayout>    

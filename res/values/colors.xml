@@ -1,0 +1,11 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+	<color name="rojo">#ff0000</color>
+	<color name="white">#ffffff</color>
+	<color name="presentationBgColor">#dddddd</color>
+	<color name="lblTextColorNormal">#ef9c00</color>
+	<color name="lblTextColorWarning">#d13800</color>
+	<color name="bgNotification">#fdf295</color>
+	<color name="bgNotificationTopBar">#ef9c00</color>
+</resources>

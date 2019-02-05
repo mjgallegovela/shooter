@@ -1,0 +1,31 @@
+<resources>
+
+    <!--
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    
+    <dimen name="backCountSize">60sp</dimen>
+    <dimen name="gameOverTextSize">30sp</dimen>
+    <dimen name="shootAreaWidth">150dp</dimen>
+    <dimen name="shootBtnDiamenter">130dp</dimen>
+    
+    <!-- Seconds that a shoot takes to arrive to a point in the left side of the last level -->
+	<item type="integer" name="shootTime">1</item>
+	<item type="integer" name="initialTime">60</item>
+	<item type="integer" name="levelIncScore">10</item>
+	<item type="integer" name="duckTime">7</item>
+	<item type="integer" name="levelIncTime">1</item>
+	<item type="fraction" name="pointerSensitiveThreashold">100%</item>
+	
+	<item type="integer" name="goalErrorCoef">-1</item>
+	<item type="fraction" name="goalErrorProbability">20%</item>
+	<item type="integer" name="goalLifeCoef">2</item>
+	<item type="fraction" name="goalLifeProbability">10%</item>
+</resources>

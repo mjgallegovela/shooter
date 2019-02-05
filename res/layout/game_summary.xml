@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmenu" >
+    
+    <TextView 
+        android:id="@+id/lblGameOver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lblTextColorWarning"
+        android:textSize="@dimen/gameOverTextSize"
+        android:text="@string/gameOver"/>
+    
+    <TextView
+        android:id="@+id/lblSummaryScore" 
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lblTextColorWarning"
+        android:textSize="@dimen/gameOverTextSize" />
+	<Button
+		android:id="@+id/btnRePlay"
+		android:layout_width="70dp"
+		android:layout_height="70dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="25dp"
+		android:layout_marginLeft="25dp"
+		android:background="@drawable/btn_start" />
+	<Button
+		android:id="@+id/btnNext"
+		android:layout_width="70dp"
+		android:layout_height="70dp"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="25dp"
+		android:layout_marginRight="25dp"
+		android:background="@drawable/btn_next" />
+</RelativeLayout>

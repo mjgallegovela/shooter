@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tiro al pato</string>
+	<string name="btnEnterLegendCpt">Comenzar</string>
+	<string name="lblScoreTxt">PUNTUACIÓN</string>
+	<string name="lblTimeTxt">TIEMPO</string>
+	<string name="btnStartGameCpt">Comenzar</string>
+	<string name="gameOver">GAME OVER</string>
+	
+</resources>
